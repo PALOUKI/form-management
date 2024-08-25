@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formlaire.css">
+    <script src="fonctions.js" defer></script> 
+    <script src="script.js" defer></script>
+   
+    <title>Mon formulaire</title>
+</head>
+<body>
+    
+    <div >
+        <button id="inscrire" onclick="TogglePopup()">S'inscrire</button>
+        <div id="contient_form">
+            <form action="" id="formulaire" novalidate>
+                <h2>
+                    Veuillez remplir ce formulaire
+                </h2>
+                <p>
+                    <p>
+                        <label for="text"> Entrer votre nom </label><br>
+                        <span  id="Name_Error_message"></span>
+                        <input type="text" name="name" id="name" class="input" placeholder="minimum trois caractère" ><br>
+                    </p>
+                    <p>
+                        <label for="text" >Entrer votre prénom </label><br>
+                        <span id="Surname_Error_message"></span>
+                        <input type="text" id="surname" name="surname" class="input"><br>
+                    </p>
+                    <p>
+                        <input type="radio" name="sex">
+                        <label for="sex" id="sex_masculin">homme</label>
+                    <br>
+                        <input type="radio" name="sex">
+                        <label for="sex" id="sex_feminin">femme</label>
+                    </p>
+                    <p>
+                        <label for="age" id="age">Entrer votre age</label>
+                        <input type="date"><br>
+                    </p>
+                    <p>
+                        <label for="email" >Votre email</label><br>
+                        <span id="Email_Error_message"></span>
+                        <input type="email" class="input" id="email"><br>
+                    </p>
+                    <p>
+                        <label for="file">Ajouter une pièce d'identité :</label><br>
+                        <input type="file">
+                    </p>
+                    <button id="Envoyer" type="submit">Envoyer</button>
+                    <button id="fermer" onclick="TogglePopup()">fermer</button>
+                </p>
+            </form>
+        </div>
+        
+        
+    </div>
+  
+</body>
+</html>
